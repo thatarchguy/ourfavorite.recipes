@@ -1,8 +1,8 @@
-baseURL = "https://tendermeatlove.com"
+baseURL = "https://OurFavorite.Recipes"
 disablePathToLower = false
 languageCode = "en-us"
 Copyright = "© Copyright 2019 OurFavoriteRecipes"
-title = "Our Favorite"
+title = "Our Favorite Recipes"
 archetypeDir =                "archetypes"
 # DisqusShortname = "bluescripts"
 # hostname (and path) to the root, e.g. http://spf13.com/
@@ -86,7 +86,7 @@ staticDir =                   "static"
 stepAnalysis =                false
 # theme to use (located by default in /themes/THEMENAME/)
 themesDir =                   "themes"
-theme =                       "hugo-xmin"
+theme =                       "gochowdown"
 # if true, use /filename.html instead of /filename/
 uglyURLs =                    false
 # verbose output
@@ -95,29 +95,41 @@ verbose =                     false
 verboseLog =                  false
 # watch filesystem for changes and recreate as needed
 watch =                       true
-#[taxonomies]
-#category = "categories"
-#tag = "tags"
+
+
+[params]
+hideCredits = true
+hideCopyright = true
+showNavTitle = true
+
+[taxonomies]
+  category = "category"
+  cusine = "cuisine"
+  tag = "tags"
 
 preserveTaxonomyNames = true
 
 [permalinks]
-posts = "/:year/:month/:slug/"
-note = "/note/:year/:month/:slug/"
+  posts = "/:year/:month/:slug/"
+  note = "/note/:year/:month/:slug/"
 
 [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+  name = "Home"
+  url = "/"
+  weight = 1
 [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
+  name = "Category"
+  weight = 2
+  url = "/category/"
 [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
+  name = "Cuisine"
+  weight =  3
+  url = "/cuisine/"
 [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 7
+  name = "Tags"
+  url = "/tags/"
+  weight = 4
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 7
