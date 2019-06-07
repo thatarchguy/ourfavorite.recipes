@@ -1,0 +1,20 @@
+image: monachus/hugo:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+.ci-template: &ci-template
+  stage: build
+  script:
+  - hugo
+
+Build Website:
+  <<: *ci-template
+
+pages:
+  <<: *ci-template
+  artifacts:
+    paths:
+    - public
+  only:
+  - gh-pages
