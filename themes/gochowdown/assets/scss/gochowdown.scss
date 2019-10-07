@@ -1,16 +1,6 @@
 {{ $tileurl := "assets/tile.png" | absURL }}
 $bg-blue-tile-url: "{{ $tileurl  }}";
 
-
-.xs-p2 img  {
-  width: 40%;
- }
-
-.xs-p2 {
-  vertical-align: middle;
-  text-align: center;
-}
-
 @import "variables";
 @import "base";
 @import "content";
