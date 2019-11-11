@@ -1,4 +1,11 @@
 @import url("https://rsms.me/inter/inter-ui.css");
+.xs-p2 img {
+  width: 40%; }
+
+.xs-p2 {
+  vertical-align: middle;
+  text-align: center; }
+
 body, button {
   margin: 0; }
 
